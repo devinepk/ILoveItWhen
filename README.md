@@ -41,7 +41,7 @@ Journaling is commonly accepted as being a positive activity, but it's difficult
   - README.md
 
 ## 5. Design Objectives
-### [See wireframe here](https://balsamiq.cloud/satp86q/ptjyh0o/r2164).
+### [See wireframe here](https://balsamiq.cloud/satp86q/ptjyh0o).
 This will have a clean, uncluttered, and modern look, with ample whitespace to allow the prompt to stand out.  It should be warm and **very** visually appealing.
   * Add-On Features
 

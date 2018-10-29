@@ -9,7 +9,7 @@
 <div class="container text-center">
 <h1 class="mt-5 mb-5">I</h1>
 
-<img src="/images/I.png" alt="Heart" class="Responsive image">
+<img src="images/I.jpg" alt="Heart" class="w-25">
 
 <h1 class="mt-5 mb-5">it when</h1>
 
