@@ -16,23 +16,23 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/new', function () {
-    return view('addLoveIt');
+    return view('/pages/addLoveIt');
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('/pages/login');
 });
 
 Route::get('/profile', function () {
-    return view('profile');
+    return view('/pages/profile');
 });
 
 Route::get('/public', function () {
-    return view('publicFeed');
+    return view('pages/publicFeed');
 });
 
 Route::get('/', function () {
-    return view('splash');
+    return view('/pages/splash');
 });
 
 Route::get('/private', function () {
