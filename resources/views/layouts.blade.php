@@ -14,7 +14,7 @@
 
     @include('navigation')
 
-    <h1 class="mt-3 mb-5">@yield('title')</h1>
+    <h1 class="mt-3 mb-5">@yield('h1')</h1>
 
     @yield('content')
 
