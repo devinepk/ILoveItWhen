@@ -24,7 +24,7 @@
 
 @section('footer')
 <div class="mt-5 container text-center">
-<p><a href="resources/views/pages/publicFeed.blade.php">See examples</a></p>
-<p><a href="resources/views/pages/login.blade.php">Have an account? Sign-in</a></p>
+<p><a href="/public">See examples</a></p>
+<p><a href="/login">Have an account? Sign-in</a></p>
 </div>
 @endsection
