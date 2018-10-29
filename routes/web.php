@@ -36,5 +36,5 @@ Route::get('/', function () {
 });
 
 Route::get('/private', function () {
-    return view('userFeed');
+    return view('/pages/userFeed');
 });
