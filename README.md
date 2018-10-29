@@ -90,4 +90,4 @@ This will have a clean, uncluttered, and modern look, with ample whitespace to a
 
 
 ## 7. How The Pages Will Look
-### [See wireframe here](https://balsamiq.cloud/satp86q/ptjyh0o/r2164).
+### [See wireframe here](WireFrame.pdf).
