@@ -7,13 +7,14 @@
 
 @section('content')
 <div class="container">
+</br>
   <div class="card mb-5" style="">
     <div class="card-body">
       <img class="card-img-top border border-primary" id="cardImage" src="images/sample.jpg" alt="Card image cap">
     </div>
     <div class="card-body font-weight-light pt-0">
-      <p class="card-text m-0" id="imageDate">Date: October 31, 2018</p>
-      <p class="card-text" id="imageLocation">Location:  Huntington Beach, CA</p>
+      <p class="card-text m-0" id="cardDate">Date: October 31, 2018</p>
+      <p class="card-text" id="cardLocation">Location:  Huntington Beach, CA</p>
     </div>
     <div class="card-header text-right">
       <small class="text-muted mr-5">Share what you love!</small>
@@ -25,11 +26,14 @@
 
   <div class="card mb-5" style="">
     <div class="card-body">
-      <img class="card-img-top border border-primary" id="textImage" src="images/sample2.jpg" alt="Card image cap">
+      <div class="container border border-primary">
+        <p class="mb-0 mt-1">I love it when</p>
+        <h2 id="cardText">my kids hug me when I come home.</h2>
+      </div>
     </div>
     <div class="card-body font-weight-light pt-0">
-      <p class="card-text m-0" id="imageDate">Date: October 28, 2018</p>
-      <p class="card-text" id="imageLocation">Location:  Dana Point, CA</p>
+      <p class="card-text m-0" id="cardDate">Date: October 28, 2018</p>
+      <p class="card-text" id="cardLocation">Location:  Dana Point, CA</p>
     </div>
     <div class="card-header text-right">
       <small class="text-muted mr-5">Share what you love!</small>
