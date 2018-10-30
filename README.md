@@ -50,6 +50,7 @@ This will have a clean, uncluttered, and modern look, with ample whitespace to a
     - Create social shareables from current and previous submissions
 
   * Background color: #fff;
+  * [Social buttons for bootstrap](https://lipis.github.io/bootstrap-social/), installed via npm.
 
 ## 6. Data Elements - like instagram for journaling(?)
 * User Information (table)

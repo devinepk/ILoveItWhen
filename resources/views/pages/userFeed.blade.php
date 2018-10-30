@@ -7,7 +7,7 @@
 
 @section('content')
 <div class="container">
-  <div class="card" style="width: 18rem;">
+  <div class="card" style="">
     <div class="card-body">
       <img class="card-img-top" id="cardImage" src="images/sample.jpg" alt="Card image cap">
     </div>
@@ -18,7 +18,7 @@
     <div class="card-header text-right">
       <small class="text-muted mr-5">Share what you love!</small>
       <i class="fas fa-share-alt mr-1" id="share"></i>
-      <i class="fas fa-lock-open mr-1" id="privatePublic"></i>
+      <i class="fas fa-lock  mr-1" id="privatePublic"></i>
       <i class="far fa-heart mr-1" id="favorite"></i>
     </div>
   </div>
