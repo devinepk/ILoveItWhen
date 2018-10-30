@@ -14,7 +14,8 @@
     </div>
     <div class="card-body font-weight-light pt-0">
       <p class="card-text m-0" id="cardDate">Date: October 31, 2018</p>
-      <p class="card-text" id="cardLocation">Location:  Huntington Beach, CA</p>
+      <p class="card-text mb-0" id="cardLocation">Location:  Huntington Beach, CA</p>
+      <small class="card-text text-muted">Hipster_Dad</small>
     </div>
     <div class="card-header text-right">
       <small class="text-muted mr-5">Share what you love!</small>
@@ -33,7 +34,8 @@
     </div>
     <div class="card-body font-weight-light pt-0">
       <p class="card-text m-0" id="cardDate">Date: October 28, 2018</p>
-      <p class="card-text" id="cardLocation">Location:  Dana Point, CA</p>
+      <p class="card-text mb-0" id="cardLocation">Location:  Dana Point, CA</p>
+      <small class="card-text text-muted">Hipster_Dad</small>
     </div>
     <div class="card-header text-right">
       <small class="text-muted mr-5">Share what you love!</small>

@@ -24,7 +24,7 @@
 </br>
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <p class="lead">Family man & coffee drinker. Hipster before it was cool.  Now just cool.</p>
+    <p class="lead" id="profileDescription">Family man & coffee drinker. Hipster before it was cool.  Now just cool.</p>
   </div>
 </div>
 

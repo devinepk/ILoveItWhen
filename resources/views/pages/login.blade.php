@@ -28,6 +28,3 @@
 </form>
 </div>
 @endsection
-
-
-@extends('footer')
