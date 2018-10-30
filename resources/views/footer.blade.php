@@ -1,4 +1,4 @@
-<ul class="nav justify-content-center fixed-bottom border-top mb-2 bg-white">
+<ul class="nav justify-content-center fixed-bottom border-top bg-white">
   <li class="nav-item">
     <a class="nav-link active mt-2" href="/profile"><i class="far fa-user fa-lg"></i></a>
   </li>
