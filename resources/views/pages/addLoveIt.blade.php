@@ -5,9 +5,9 @@
 @endsection
 
 @section('content')
-<div class=container>
+<div class="container">
 
-  <form>
+  <form class="">
     <div class="form-group">Write about it...
       <textarea class="form-control mt-2 mb-5" id="exampleFormControlTextarea1" rows="3">What do you love?</textarea>
     </div>

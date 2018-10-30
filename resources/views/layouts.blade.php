@@ -11,7 +11,7 @@
 
     <title>@yield('title')</title>
   </head>
-  <body class="container">
+  <body class="container mb-3">
 
     @include('navigation')
 
