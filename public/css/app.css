@@ -10467,11 +10467,12 @@ a.text-dark:focus {
 }
 
 body {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
-.border-top .border-bottom .border-primary {
-  color: #00C4CC;
+#cardImage #cardText {
+  border-color: #00C4CC;
+  border: 2px solid;
 }
 
 #favorite {

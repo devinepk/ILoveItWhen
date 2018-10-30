@@ -10,7 +10,7 @@
 </br>
   <div class="card mb-5" style="">
     <div class="card-body">
-      <img class="card-img-top border border-primary" id="cardImage" src="images/sample.jpg" alt="Card image cap">
+      <img class="card-img-top" id="cardImage" src="images/sample.jpg" alt="Card image cap">
     </div>
     <div class="card-body font-weight-light pt-0">
       <p class="card-text m-0" id="cardDate">Date: October 31, 2018</p>
@@ -27,7 +27,7 @@
 
   <div class="card mb-5" style="">
     <div class="card-body">
-      <div class="container border border-primary">
+      <div class="container">
         <p class="mb-0 mt-1">I love it when</p>
         <h2 id="cardText">my kids hug me when I come home.</h2>
       </div>
