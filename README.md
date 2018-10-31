@@ -53,34 +53,43 @@ This will have a clean, uncluttered, and modern look, with ample whitespace to a
   * [Social buttons for bootstrap](https://lipis.github.io/bootstrap-social/), installed via npm.
 
 ## 6. Data Elements - like instagram for journaling(?)
+#### Tables
 * User Information (table)
   - id (columns)
   - First name  
   - Last name
   - Email address
   - Screen name
-  - Number of posts
-  - Number of followers
-  - Number of people following
+  - Profile Picture
+  - Profile Description
+  - Total Number of posts
+  - Time since last post
 
 * Post Information(table)
   - id (columns)
-  - Image or text?
+  - Image
   - Date submitted
   - Time submitted
-  - Location submitted (gps coordinates)
-  - Favorite (y/n)
+  - Location (gps)
+  - Total number of hearts
   - Status (private/public)
 
-* Pivot Table 1 (from table: User Information && table: Post Information) - Displayed to User:
+#### Pivot Tables
+* Displayed in UserFeed: (from table: User Information && table: Post Information)
   - Screen name
-  - Image/text
+  - Image
   - Date submitted
-  - Time submitted
-  - Favorite (y/n)
+  - Heart (y/n)
   - Status (private/public)
 
-* Pivot Table 2 (from table: User Information && Post Information) - Stats (displayed to user?)
+* Displayed in PublicFeed, starting with most recent post: (from table: Post Information)
+  - Image
+  - Date submitted
+  - Location (gps)
+  - Status (public)
+  - Total number of hearts
+
+* Stats (kept in databse) (from table: User Information && Post Information)
   - Number of posts
   - Number of followers
   - Number of people following
@@ -88,6 +97,20 @@ This will have a clean, uncluttered, and modern look, with ample whitespace to a
   - Day of the week most frequently submitted
   - Number of public posts
   - Number of private post
+  - Time since last post
+
+* Displayed in Profile: (from table: User Information && Post Information)
+  - Profile Picture
+  - Number of posts
+  - Time since last posts
+  - Profile Description
+  - Image
+
+
+
+
+
+
 
 
 ## 7. How The Pages Will Look

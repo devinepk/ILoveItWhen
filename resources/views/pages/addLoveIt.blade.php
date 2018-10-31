@@ -22,10 +22,19 @@
   </div>
 
 <div class="text-center">
-  <button type="submit" class="mt-2 btn btn-outline-primary">Share</button>
+  <button type="submit" class="mt-2 btn btn-outline-primary">Keep</button>
 </div>
 
 </div>
 @endsection
+
+@section('footer')
+<div class="mt-5 container text-center">
+<p><a href="/public">Inspiration</a></p>
+</div>
+@endsection
+
+
+
 
 @extends('footer')

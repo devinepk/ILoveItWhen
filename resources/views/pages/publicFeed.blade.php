@@ -15,13 +15,13 @@
     <div class="card-body font-weight-light pt-0">
       <p class="card-text m-0" id="cardDate">Date: October 31, 2018</p>
       <p class="card-text mb-0" id="cardLocation">Location:  Huntington Beach, CA</p>
-      <small class="card-text text-muted">Hipster_Dad</small>
+      <!-- <small class="card-text text-muted">Hipster_Dad</small> -->
     </div>
     <div class="card-header text-right">
-      <small class="text-muted mr-5">Share what you love!</small>
-      <i class="fas fa-share-alt mr-1" id="share"></i>
-      <i class="fas fa-lock-open mr-1" id="privatePublic"></i>
-      <i class="far fa-heart mr-1" id="favorite"></i>
+      <i class="fas fa-lock-open mr-2" id="privatePublic"></i>
+      <!-- <i class="fas fa-share-alt mr-2" id="share"></i> -->
+      <i class="far fa-heart mr-2" id="favorite">14</i>
+      <!-- <small class="text-muted mr-5">Share what you love!</small> -->
     </div>
   </div>
 
@@ -35,13 +35,13 @@
     <div class="card-body font-weight-light pt-0">
       <p class="card-text m-0" id="cardDate">Date: October 28, 2018</p>
       <p class="card-text mb-0" id="cardLocation">Location:  Dana Point, CA</p>
-      <small class="card-text text-muted">Hipster_Dad</small>
+      <!-- <small class="card-text text-muted">Hipster_Dad</small> -->
     </div>
     <div class="card-header text-right">
-      <small class="text-muted mr-5">Share what you love!</small>
-      <i class="fas fa-share-alt mr-1" id="share"></i>
-      <i class="fas fa-lock-open mr-1" id="privatePublic"></i>
-      <i class="far fa-heart mr-1" id="favorite"></i>
+      <i class="fas fa-lock-open mr-2" id="privatePublic"></i>
+      <!-- <i class="fas fa-share-alt mr-2" id="share"></i> -->
+      <i class="far fa-heart mr-2" id="favorite">14</i>
+      <!-- <small class="text-muted mr-5">Share what you love!</small> -->
     </div>
   </div>
 </br>
