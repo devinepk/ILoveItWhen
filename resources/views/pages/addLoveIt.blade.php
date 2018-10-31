@@ -11,7 +11,7 @@
     <div class="card-body">
     <form class="">
       <div class="form-group">Write about it...
-        <textarea class="form-control mt-2 mb-5 around" id="textLoveIt" rows="3">What do you love?</textarea>
+        <textarea class="form-control mt-2 mb-5 around" id="textLoveIt" rows="3" placeholder="What do you love?"></textarea>
       </div>
       <div class="mb-2">
         <p class="mb-1">Or take a picture...</p>

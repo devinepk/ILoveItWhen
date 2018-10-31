@@ -11,13 +11,13 @@
 
 <img src="images/I.jpg" alt="Heart" class="w-25">
 
-<h1 class="mt-5 mb-5">it when</h1>
+<h1 class="mt-5 mb-5">it when...</h1>
 
 <form>
   <div class="form-group">
     <input type="text" class="text-center form-control" id="newLoveIt" placeholder="What do you love?">
   </div>
-  <button type="submit" class="mt-2 btn btn-outline-primary">Share</button>
+  <button type="submit" class="mt-2 btn btn-outline-primary">Save</button>
 </form>
 </div>
 @endsection
