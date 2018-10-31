@@ -30,7 +30,7 @@
 
 @section('footer')
 <div class="mt-5 container text-center">
-<p><a href="/public">Inspiration</a></p>
+<p>Need some <a href="/public">inspiration?</a></p>
 </div>
 @endsection
 

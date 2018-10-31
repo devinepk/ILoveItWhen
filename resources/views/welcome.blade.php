@@ -7,8 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
         <!-- Styles -->
         <style>
             html, body {

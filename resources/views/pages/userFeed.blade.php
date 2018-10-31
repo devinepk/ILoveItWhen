@@ -6,6 +6,10 @@
 @endsection
 
 @section('content')
+<div class="container text-center mb-2">
+  <p>It's been (-) days since you were intentionally thankful</p>
+</div>
+
 <div class="container">
   <div class="card mb-5" style="">
     <div class="card-body">
