@@ -38,3 +38,7 @@ Route::get('/', function () {
 Route::get('/private', function () {
     return view('/pages/userFeed');
 });
+
+Route::get('/edit', function () {
+    return view('/pages/editprofile');
+});
