@@ -25,9 +25,9 @@
 
   <div class="card mb-5" style="">
     <div class="card-body">
-      <div class="container border border-primary">
+      <div class="container" id="cardText">
         <p class="mb-0 mt-1">I love it when</p>
-        <h2 id="cardText">my kids hug me when I come home.</h2>
+        <h2>my kids hug me when I come home.</h2>
       </div>
     </div>
     <div class="card-body font-weight-light pt-0">

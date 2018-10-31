@@ -13,12 +13,33 @@
 //   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 // }
 
-body {
-  background-color: #FFFFFF;
+h1, h2, h3, h4, h5 {
+  color: #696773;
 }
 
-#cardImage #cardText {
-  border-color: #00C4CC;
+.navbar-brand {
+    color: #696773 !important;
+}
+
+#cardImage {
+  border-color: #00C4CC !important;
+  border: 2px solid;
+}
+
+.btn-outline-primary {
+    color: #00C4CC !important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #00C4CC !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #00C4CC;
+  color: white !important;
+}
+
+#cardText {
+  border-color: #00C4CC !important;
   border: 2px solid;
 }
 

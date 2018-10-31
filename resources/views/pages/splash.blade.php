@@ -17,7 +17,7 @@
   <div class="form-group">
     <input type="text" class="text-center form-control" id="newLoveIt" placeholder="What do you love?">
   </div>
-  <button type="submit" class="mt-2 btn btn-primary">Share</button>
+  <button type="submit" class="mt-2 btn btn-outline-primary">Share</button>
 </form>
 </div>
 @endsection

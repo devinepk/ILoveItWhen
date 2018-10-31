@@ -16,7 +16,7 @@
     <div class="col text-center">
        <h2 id="postCount">8</h2>
        <p class="text-muted">Number of Posts</p>
-       <button type="button" class="btn btn-primary btn-sm mt-2">Edit Profile</button>
+       <button type="button" class="btn btn-outline-primary btn-sm mt-2">Edit Profile</button>
     </div>
   </div>
 

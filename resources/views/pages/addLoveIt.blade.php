@@ -18,7 +18,7 @@
   </form>
 
 <div class="text-center">
-  <button type="submit" class="mt-2 btn btn-primary">Share</button>
+  <button type="submit" class="mt-2 btn btn-outline-primary">Share</button>
 </div>
 
 </div>
