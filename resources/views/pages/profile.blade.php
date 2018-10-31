@@ -18,7 +18,7 @@
        <h2 class="mt-1" id="postCount">8</h2>
        <p class="text-muted mb-1">Number of Posts</p>
      </div>
-       <button type="button" class="btn btn-outline-primary btn-sm mt-3"><a href="/edit">Edit Profile</button>
+       <a href="/edit"><button type="button" class="btn btn-outline-primary btn-sm mt-3">Edit Profile</button></a>
     </div>
   </div>
 
@@ -29,7 +29,6 @@
     <p class="lead" id="profileDescription">Family man & coffee drinker. Hipster before it was cool.  Now just cool.</p>
   </div>
 </div>
-
 
 
 
