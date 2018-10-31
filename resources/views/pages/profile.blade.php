@@ -10,13 +10,15 @@
 <div class="container">
   <div class="row">
     <div class="col" id="profilePic">
-      <img src="/images/profilepic.jpg" class="img-fluid" width="125" height="auto" alt="Responsive image">
+      <img src="/images/profilepic.jpg" class="img-fluid around" width="125" height="auto" alt="Responsive image">
       <small class="form-text text-muted" id="profileName">Hipster_Dad</small>
     </div>
     <div class="col text-center">
-       <h2 id="postCount">8</h2>
-       <p class="text-muted">Number of Posts</p>
-       <button type="button" class="btn btn-outline-primary btn-sm mt-2">Edit Profile</button>
+      <div class="around">
+       <h2 class="mt-1" id="postCount">8</h2>
+       <p class="text-muted mb-1">Number of Posts</p>
+     </div>
+       <button type="button" class="btn btn-outline-primary btn-sm mt-3">Edit Profile</button>
     </div>
   </div>
 
@@ -53,7 +55,9 @@
   </div>
 </div>
 </div>
+</br>
 </div>
+</br>
 @endsection
 
 

@@ -8,7 +8,7 @@
 @section('content')
 <div class="container">
 </br>
-  <div class="card mb-5" style="">
+  <div class="card mb-5 around" style="">
     <div class="card-body">
       <img class="card-img-top" id="cardImage" src="images/sample.jpg" alt="Card image cap">
     </div>
@@ -25,9 +25,9 @@
     </div>
   </div>
 
-  <div class="card mb-5" style="">
+  <div class="card mb-5 around" style="">
     <div class="card-body">
-      <div class="container"  id="cardText">
+      <div class="container around"  id="cardText">
         <p class="mb-0 mt-1">I love it when</p>
         <h2>my kids hug me when I come home.</h2>
       </div>
@@ -44,7 +44,7 @@
       <i class="far fa-heart mr-1" id="favorite"></i>
     </div>
   </div>
-
+</br>
 </div>
 
 

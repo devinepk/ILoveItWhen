@@ -10470,7 +10470,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+p {
   color: #696773;
 }
 
@@ -10478,9 +10479,8 @@ h5 {
   color: #696773 !important;
 }
 
-#cardImage {
-  border-color: #00C4CC !important;
-  border: 2px solid;
+.campic {
+  color: #00C4CC !important;
 }
 
 .btn-outline-primary {
@@ -10495,7 +10495,7 @@ h5 {
   color: white !important;
 }
 
-#cardText {
+.around {
   border-color: #00C4CC !important;
   border: 2px solid;
 }
