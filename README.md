@@ -59,11 +59,10 @@ This will have a clean, uncluttered, and modern look, with ample whitespace to a
   - First name  
   - Last name
   - Email address
-  - Screen name
+  - user name
   - Profile Picture
   - Profile Description
   - Total Number of posts
-  - Time since last post
 
 * Post Information(table)
   - id (columns)
@@ -76,7 +75,7 @@ This will have a clean, uncluttered, and modern look, with ample whitespace to a
 
 #### Pivot Tables
 * Displayed in UserFeed: (from table: User Information && table: Post Information)
-  - Screen name
+  - user name
   - Image
   - Date submitted
   - Heart (y/n)
