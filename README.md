@@ -106,8 +106,18 @@ This will have a clean, uncluttered, and modern look, with ample whitespace to a
   - Image
 
 
-
-
+* Data Structure
+  - CREATE TABLE user_information (
+      - id serial PRIMARY key,
+      - first_name varchar(50) NOT null,
+      - last_name varchar(50) NOT null,
+      - email_address varchar(320) NOT null,
+      - user_name varchar(15) NOT null,
+      - profile_picture img,
+      - profile_description varchar(50) NOT null,
+      - profile_created DATE NOT NULL,
+      - total_number_of_posts INTEGER NOT NULL
+  - )
 
 
 
