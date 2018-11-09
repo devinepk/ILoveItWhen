@@ -16,31 +16,35 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/new', function () {
-    return view('/pages/addLoveIt');
+    return view('addLoveIt');
 });
 
 Route::get('/login', function () {
-    return view('/pages/login');
+    return view('login');
 });
 
 Route::get('/profile', function () {
-    return view('/pages/profile');
+    return view('profile');
 });
 
 Route::get('/public', function () {
-    return view('pages/publicFeed');
+    return view('publicFeed');
 });
 
 Route::get('/', function () {
-    return view('/pages/splash');
+    return view('splash');
 });
 
+// Route::get('/', function () {
+//     return view('home');
+// });
+
 Route::get('/private', function () {
-    return view('/pages/userFeed');
+    return view('userFeed');
 });
 
 Route::get('/edit', function () {
-    return view('/pages/editprofile');
+    return view('editprofile');
 });
 
 Auth::routes();
