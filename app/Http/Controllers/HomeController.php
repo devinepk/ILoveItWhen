@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+
+    public function addsPost()
+    {
+      return "this post was added";
+    }
 }
