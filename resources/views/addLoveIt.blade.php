@@ -7,9 +7,9 @@
 @section('content')
   <div class="container">
 
-  <form class="" method="POST" action="/private1">
+  <form class="" method="POST" action="/private">
     @csrf
-    @method('PUT')
+    @method('POST')
     <div class="card mb-2 around">
       <div class="card-body">
         <div class="form-group">Write about it...

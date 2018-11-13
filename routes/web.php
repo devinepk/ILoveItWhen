@@ -35,11 +35,11 @@ Route::get('/', function () {
     return view('splash');
 });
 
-Route::PUT('/private1', 'HomeController@addsPost')->middleware('auth');
+Route::resource('/private', 'PostController')->middleware('auth');
 
-Route::get('/private', function () {
-    return view('userFeed');
-});
+// Route::get('/private', function () {
+    // return view('userFeed');
+// });
 
 Route::get('/edit', function () {
     return view('editprofile');
@@ -47,4 +47,4 @@ Route::get('/edit', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

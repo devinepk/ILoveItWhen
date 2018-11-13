@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return "this is the index of PostController";
     }
 
     /**
@@ -23,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return "A new post was created";
     }
 
     /**
@@ -34,7 +34,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "your post was saved";
     }
 
     /**
@@ -45,7 +45,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        return "display your post here";
     }
 
     /**
@@ -56,7 +56,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        return "edit your post here";
     }
 
     /**
@@ -68,7 +68,7 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return "this saved post was updated";
     }
 
     /**
