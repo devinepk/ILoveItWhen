@@ -29,6 +29,6 @@ class HomeController extends Controller
 
     public function addsPost()
     {
-      return "this post was added";
+      return ('this post was added');
     }
 }

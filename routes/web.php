@@ -35,8 +35,7 @@ Route::get('/', function () {
     return view('splash');
 });
 
-Route::get('/list', 'HomeController@addsPost')->middleware('auth');
-
+Route::PUT('/private1', 'HomeController@addsPost')->middleware('auth');
 
 Route::get('/private', function () {
     return view('userFeed');
