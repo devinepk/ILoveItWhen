@@ -13,8 +13,12 @@ class UserPostsTable extends Migration
      */
     public function up()
     {
-        Schema::table('user_posts', function (Blueprint $table) {
-            //
+        Schema::create('user_posts', function (Blueprint $table) {
+          $table->increments('id');
+          $table->string('image_link');
+          $table->integer('num_of_hearts');
+          $table->boolean('private');
+          $table->timestamps();
         });
     }
 
