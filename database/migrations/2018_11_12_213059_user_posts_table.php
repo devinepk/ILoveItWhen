@@ -16,6 +16,7 @@ class UserPostsTable extends Migration
         Schema::create('user_posts', function (Blueprint $table) {
           $table->increments('id');
           $table->string('image_link');
+          $table->string('post_text');
           $table->integer('num_of_hearts');
           $table->boolean('private');
           $table->timestamps();
@@ -29,8 +30,6 @@ class UserPostsTable extends Migration
      */
     public function down()
     {
-        Schema::table('user_posts', function (Blueprint $table) {
-            //
-        });
-    }
+        Schema::dropIfExists('user_posts');
+      }
 }
