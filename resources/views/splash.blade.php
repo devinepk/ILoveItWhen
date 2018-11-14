@@ -12,7 +12,7 @@
 
 <h1 class="mt-3 mb-5">it when...</h1>
 
-  <a href="/login"><button type="submit" class="mt-2 btn btn-outline-primary">Sign In</button></a>
+  <!-- <a href="/login"><button type="submit" class="mt-2 btn btn-outline-primary">Sign In</button></a> -->
 
 </div>
 

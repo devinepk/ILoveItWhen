@@ -37,10 +37,6 @@ Route::get('/', function () {
 
 Route::resource('/private', 'PostController')->middleware('auth');
 
-// Route::get('/private', function () {
-    // return view('userFeed');
-// });
-
 Route::get('/edit', function () {
     return view('editprofile');
 });

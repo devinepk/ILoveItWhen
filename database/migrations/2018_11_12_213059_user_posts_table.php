@@ -14,7 +14,7 @@ class UserPostsTable extends Migration
     public function up()
     {
         Schema::create('user_posts', function (Blueprint $table) {
-          $table->increments('id');
+          $table->foreign('id')->references('id')->on('users');
           $table->string('image_link');
           $table->string('post_text');
           $table->integer('num_of_hearts');

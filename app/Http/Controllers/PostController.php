@@ -21,7 +21,7 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
         return "A new post was created";
     }
@@ -34,7 +34,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        return "your post was saved";
+      $post = new \App\user_post;
+      $post->post_text = $request->input('post_text');
+      $post->user_id = \Auth::id();
+      $post->save();
+      return redirect("/private");
     }
 
     /**
