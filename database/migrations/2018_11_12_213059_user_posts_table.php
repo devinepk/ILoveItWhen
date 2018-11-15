@@ -14,11 +14,13 @@ class UserPostsTable extends Migration
     public function up()
     {
         Schema::create('user_posts', function (Blueprint $table) {
-          $table->foreign('id')->references('id')->on('users');
-          $table->string('image_link');
+          $table->increments('id');
+          $table->string('image_link')->nullable();
           $table->string('post_text');
           $table->integer('num_of_hearts');
           $table->boolean('private');
+          $table->unsignedInteger('user_id');
+          $table->foreign('user_id')->references('id')->on('users');
           $table->timestamps();
         });
     }

@@ -9,21 +9,16 @@
 
   <form class="" method="POST" action="/private">
     @csrf
-    @method('POST')
     <div class="card mb-2 around">
       <div class="card-body">
         <div class="form-group">Write about it...
-          <input class="form-control mt-2 mb-5 around" name="post_text" id="textLoveIt" rows="3" placeholder="What do you love?"></input>
+          <input class="form-control mt-2 mb-5 around" name="post_text" id="post_text" rows="3" placeholder="What do you love?">
         </div>
-        <div class="mb-2">
-          <p class="mb-1">Or take a picture...</p>
-          <i class="fas fa-camera-retro fa-4x campic"></i>
-        </div>
-    </div>
+      </div>
     </div>
 
       <div class="text-center">
-        <button type="submit" name="post_text" class="mt-2 btn btn-outline-primary">Keep</button>
+        <button type="submit" class="mt-2 btn btn-outline-primary">Keep</button>
       </div>
     </form>
 

@@ -35,9 +35,15 @@ class PostController extends Controller
     public function store(Request $request)
     {
       $post = new \App\user_post;
+
+dd($request->input('post_text'));
+
       $post->post_text = $request->input('post_text');
       $post->user_id = \Auth::id();
+      $post->private = true;
+      $post->num_of_hearts = 0;
       $post->save();
+      $request->session()->flash('status', "You created a new post!");
       return redirect("/private");
     }
 
