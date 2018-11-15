@@ -12,7 +12,7 @@
     <div class="card mb-2 around">
       <div class="card-body">
         <div class="form-group">Write about it...
-          <input class="form-control mt-2 mb-5 around" name="post_text" id="post_text" rows="3" placeholder="What do you love?">
+          <input class="form-control mt-2 mb-5 around" name="post_text" id="post_text" placeholder="What do you love?">
         </div>
       </div>
     </div>
