@@ -11,14 +11,14 @@
     @csrf
     <div class="card mb-2 around">
       <div class="card-body">
-        <div class="form-group">Write about it...
+        <div class="form-group">I love it when...
           <input class="form-control mt-2 mb-5 around" name="post_text" id="post_text" placeholder="What do you love?">
         </div>
       </div>
     </div>
 
       <div class="text-center">
-        <button type="submit" class="mt-2 btn btn-outline-primary">Keep</button>
+        <button type="submit" class="mt-2 btn btn-outline-primary">Save</button>
       </div>
     </form>
 

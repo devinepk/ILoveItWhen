@@ -32,8 +32,7 @@
   <div class="card mb-5" style="">
     <div class="card-body">
       <div class="container around" id="cardText">
-        <p class="mb-0 mt-1">I love it when...</p>
-        <h2>...{{ $post->post_text }}</h2>
+        <h5 class="mt-2">I love it when {{ $post->post_text }}</h5>
       </div>
     </div>
     <div class="card-body font-weight-light pt-0">
