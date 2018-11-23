@@ -31,9 +31,9 @@ Route::get('/public', function () {
     return view('publicFeed');
 });
 
-Route::get('/', function () {
-    return view('splash');
-});
+// Route::get('/', function () {
+//     return view('splash');
+// });
 
 Route::resource('/private', 'PostController')->middleware('auth');
 
@@ -43,4 +43,7 @@ Route::get('/edit', function () {
 
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', function () {
+    $posts = \App\user_post::all();
+    return view('userFeed', compact('posts'));
+});

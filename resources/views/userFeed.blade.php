@@ -27,18 +27,20 @@
     </div>
   </div>
 
+@foreach ($posts as $post)
+
   <div class="card mb-5" style="">
     <div class="card-body">
       <div class="container around" id="cardText">
-        <p class="mb-0 mt-1">I love it when</p>
-        <h2>my kids hug me when I come home.</h2>
+        <p class="mb-0 mt-1">I love it when...</p>
+        <h2>...{{ $post->post_text }}</h2>
       </div>
     </div>
     <div class="card-body font-weight-light pt-0">
-      <p class="card-text m-0" id="cardDate">Date: October 28, 2018</p>
-      <p class="card-text" id="cardLocation">Location:  Dana Point, CA</p>
+      <p class="card-text m-0" id="cardDate">Created on {{ $post->created_at }}</p>
+      <!-- <p class="card-text" id="cardLocation">Location:  Dana Point, CA</p> -->
     </div>
-    <div class="card-header text-right">
+    <div class="card-header">
       <small class="text-muted mr-5">Share what you love!</small>
       <i class="fas fa-share-alt mr-1" id="share"></i>
       <i class="fas fa-lock-open mr-1" id="privatePublic"></i>
@@ -46,6 +48,7 @@
     </div>
   </div>
 
+@endforeach
 
 </div>
 
