@@ -41,7 +41,7 @@ class PostController extends Controller
       $post->num_of_hearts = 0;
       $post->save();
       $request->session()->flash('status', "You created a new post!");
-      return redirect("/");
+      return redirect("/private");
     }
 
     /**
@@ -84,8 +84,10 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+      $post = \App\user_post::find($id);
+      $post->delete();
+      return view('userFeed');
     }
 }
