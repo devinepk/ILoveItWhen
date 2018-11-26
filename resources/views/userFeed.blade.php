@@ -28,7 +28,7 @@
     </div>
   </div> -->
 
-@foreach ($user->posts as $post)
+@foreach($user->posts()->latest()->get() as $post)
 
   <div class="card mb-5" style="">
     <div class="card-body">
