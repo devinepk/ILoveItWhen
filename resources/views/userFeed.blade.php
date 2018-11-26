@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="card-header">
-      <small class="text-muted mr-5">Created on {{ $post->created_at }}</small>
+      <small class="text-muted mr-5">Created on {{ $post->prettyUpdate() }}</small>
       <!-- <i class="far fa-heart mr-1 float-right" id="favorite"></i>
       <i class="fas fa-lock-open mr-2 float-right" id="privatePublic"></i>
       <i class="fas fa-share-alt mr-2 float-right" id="share"></i> -->
