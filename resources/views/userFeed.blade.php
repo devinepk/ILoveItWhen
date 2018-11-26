@@ -7,8 +7,16 @@
 
 @section('content')
 <div class="container text-center mb-2">
-  <p>It's been (-) days since you were intentionally thankful</p>
+  <p>It's been {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }} since you thought about what you loved.</p>
+
+      <!-- SELECT id FROM user_posts ORDER BY created_at DESC LIMT 1 -->
 </div>
+
+<!--
+sort the posts from most recent on down
+limit/take (methods) on the query
+find last time post
+ -->
 
 <div class="container">
   <!-- <div class="card mb-5" style="">

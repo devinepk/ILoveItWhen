@@ -14,4 +14,9 @@ class user_post extends Model
           }
       return $dt->format('n/j/y \\a\\t g:i a');
     }
+
+    public function lastUpdate() {
+      $dt = new Carbon($this->created_at);
+      return Carbon::now()->diffForHumans($dt);
+    }
 }
