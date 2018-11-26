@@ -9,14 +9,7 @@
 <div class="container text-center mb-2">
   <p>The last time you thought about what you loved was {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }}.</p>
 
-      <!-- SELECT id FROM user_posts ORDER BY created_at DESC LIMT 1 -->
 </div>
-
-<!--
-sort the posts from most recent on down
-limit/take (methods) on the query
-find last time post
- -->
 
 <div class="container">
   <!-- <div class="card mb-5" style="">
