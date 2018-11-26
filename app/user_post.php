@@ -17,6 +17,6 @@ class user_post extends Model
 
     public function lastUpdate() {
       $dt = new Carbon($this->created_at);
-      return Carbon::now()->diffForHumans($dt);
+      return $dt->diffForHumans();
     }
 }

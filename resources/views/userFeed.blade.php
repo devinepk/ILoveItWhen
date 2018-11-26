@@ -7,7 +7,7 @@
 
 @section('content')
 <div class="container text-center mb-2">
-  <p>It's been {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }} since you thought about what you loved.</p>
+  <p>The last time you thought about what you loved was {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }}.</p>
 
       <!-- SELECT id FROM user_posts ORDER BY created_at DESC LIMT 1 -->
 </div>
