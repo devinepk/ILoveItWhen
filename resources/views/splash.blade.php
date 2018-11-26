@@ -19,6 +19,5 @@
 
 <div class="mt-3 container text-center">
 <p><a href="/public">See what other people love</a></p>
-<p><a href="/register">Don't have an account? Create one here</a></p>
 </div>
 @endsection

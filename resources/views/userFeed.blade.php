@@ -27,7 +27,7 @@
     </div>
   </div> -->
 
-@foreach ($posts as $post)
+@foreach ($user->posts as $post)
 
   <div class="card mb-5" style="">
     <div class="card-body">
@@ -43,7 +43,7 @@
       <form action="private/{{ $post->id }}" method="POST">
           @csrf
           @method('DELETE')
-        <button type="submit" class="btn btn-danger float-right"><i class="far fa-trash-alt float-right"></i></button>
+        <small><button type="submit" class="btn btn-link float-right"><i class="far fa-trash-alt float-right"></i></button></small>
       </form>
     </div>
   </div>

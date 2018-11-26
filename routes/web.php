@@ -44,6 +44,6 @@ Route::get('/edit', function () {
 Auth::routes();
 
 Route::get('/private', function () {
-    $posts = \App\user_post::all();
-    return view('userFeed', compact('posts'));
+    $user = \Auth::user();
+    return view('userFeed', compact('user'));
 });
