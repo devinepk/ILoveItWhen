@@ -88,6 +88,6 @@ class PostController extends Controller
     {
       $post = \App\user_post::find($id);
       $post->delete();
-      return view('userFeed');
+      return redirect("/private");
     }
 }
