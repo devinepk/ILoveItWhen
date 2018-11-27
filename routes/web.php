@@ -19,10 +19,6 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/spaces', function () {
-    return view('spaces');
-});
-
 Route::get('/login', function () {
     return view('login');
 });

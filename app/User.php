@@ -31,4 +31,8 @@ class User extends Authenticatable
     public function posts() {
         return  $this->hasMany('App\user_post');
     }
+
+    public function spaces() {
+        return $this->hasMany('App\Space');
+    }
 }
