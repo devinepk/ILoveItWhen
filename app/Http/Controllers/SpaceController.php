@@ -34,7 +34,11 @@ class SpaceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $space = new \App\Space;
+      $space->space_name = $request->input('space_name');
+      $space->user_id = \Auth::id();
+      $space->save();
+      return redirect("/private");
     }
 
     /**

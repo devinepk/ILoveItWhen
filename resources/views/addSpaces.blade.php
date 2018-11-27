@@ -14,16 +14,16 @@
 
 
 <div class="card">
-  <form class="" method="POST" action="/private">
-    @csrf
-      <div class="card-body mx-auto" style="width: 300px;">
-        <div class="form-group text-center">
-          <label for="new_space">Add a New Space</label>
-          <input class="form-control mt-2 mb-3 around" name="new_space" id="new_space" placeholder="What do you want to call it?">
-          <button type="submit" class="btn btn-outline-primary">Save</button>
-        </div>
-      </div>
-    </form>
+  <div class="card-body mx-auto" style="width: 300px;">
+    <div class="form-group text-center">
+      <form class="" method="POST" action="/spaces">
+          @csrf
+        <label for="space_name">Add a New Space</label>
+        <input class="form-control mt-2 mb-3 around" name="space_name" id="space_name" placeholder="What do you want to call it?">
+        <button type="submit" class="btn btn-outline-primary">Save</button>
+      </form>
+    </div>
+  </div>
 </div>
 
 </div>

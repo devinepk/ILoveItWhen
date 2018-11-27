@@ -41,6 +41,7 @@ Route::get('/', function () {
 
 Route::resource('/private', 'PostController')->middleware('auth');
 
+Route::resource('/spaces', 'SpaceController')->middleware('auth');
 
 Auth::routes();
 
