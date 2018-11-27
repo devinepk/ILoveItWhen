@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class SpacesUsers extends Migration
+class SpacesPosts extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class SpacesUsers extends Migration
      */
     public function up()
     {
-      Schema::create('spaces_users', function (Blueprint $table) {
+      Schema::create('spaces_posts', function (Blueprint $table) {
         $table->increments('id');
         $table->unsignedInteger('space_id');
         $table->foreign('space_id')->references('id')->on('spaces');
-        $table->unsignedInteger('users_id');
-        $table->foreign('users_id')->references('id')->on('users');
+        $table->unsignedInteger('post_id');
+        $table->foreign('post_id')->references('id')->on('user_posts');
         $table->timestamps();
       });
-    }
+  }
 
     /**
      * Reverse the migrations.
@@ -30,6 +30,6 @@ class SpacesUsers extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spaces_users');
+      Schema::dropIfExists('spaces_post');
     }
-}
+  }
