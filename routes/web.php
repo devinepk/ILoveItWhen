@@ -11,12 +11,16 @@
 |
 */
 
+Route::get('/addnew', function () {
+    return view('addSpaces');
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/new', function () {
-    return view('addLoveIt');
+Route::get('/spaces', function () {
+    return view('spaces');
 });
 
 Route::get('/login', function () {
@@ -37,9 +41,6 @@ Route::get('/', function () {
 
 Route::resource('/private', 'PostController')->middleware('auth');
 
-Route::get('/edit', function () {
-    return view('editprofile');
-});
 
 Auth::routes();
 
