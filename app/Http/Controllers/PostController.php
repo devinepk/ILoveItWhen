@@ -40,7 +40,6 @@ class PostController extends Controller
       $post->private = true;
       $post->num_of_hearts = 0;
       $post->save();
-      $request->session()->flash('status', "You created a new post!");
       return redirect("/private");
     }
 

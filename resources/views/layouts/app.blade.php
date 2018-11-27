@@ -24,10 +24,9 @@
     <div id="app">
         <nav class="navbar navbar-expand-sm navbar-light navbar-laravel">
             <div class="container">
-              <a class="navbar-brand" href="/">
-                <img src="images/I.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                LoveIt</a>                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+              <a class="navbar-brand" href="/"><img src="images/I.jpg" width="30" height="30" class="d-inline-block align-top" alt="">LoveIt</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

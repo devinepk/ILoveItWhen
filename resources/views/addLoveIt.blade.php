@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
 
 @section('title')
   Add a new LoveIt
@@ -34,4 +34,4 @@
 
 
 
-@extends('footer')
+@extends('footer') -->

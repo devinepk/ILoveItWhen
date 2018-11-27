@@ -6,18 +6,28 @@
 
 @section('content')
 <div class="container text-center">
-<h1 class="mt-3 mb-3">I</h1>
+  <h1 class="mt-3 mb-3">I</h1>
+    <img src="images/I.jpg" alt="Heart" class="w-25">
+  <h1 class="mt-3 mb-1">it when...</h1>
+</div>
 
-<img src="images/I.jpg" alt="Heart" class="w-25">
+<div class="container">
 
-<h1 class="mt-3 mb-5">it when...</h1>
+<form class="" method="POST" action="/private">
+  @csrf
+    <div class="card-body mx-auto" style="width: 300px;">
+      <div class="form-group text-center">
+        <input class="form-control mt-2 mb-4 around" name="post_text" id="post_text" placeholder="What do you love?">
+        <button type="submit" class="btn btn-outline-primary">Save</button>
 
-  <!-- <a href="/login"><button type="submit" class="mt-2 btn btn-outline-primary">Sign In</button></a> -->
+      </div>
+    </div>
+  </form>
 
 </div>
 
 
 <div class="mt-3 container text-center">
-<p><a href="/public">See what other people love</a></p>
+<p><a href="/public">See some examples</a></p>
 </div>
 @endsection
