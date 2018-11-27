@@ -7,7 +7,15 @@
 
 @section('content')
 <div class="container text-center mb-2">
-  <p>The last time you thought about what you loved was {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }}.</p>
+
+    <h3 class="text-center mb-3">LoveIts</h3>
+
+  <div class="alert alert-primary text-center mb-3" role="alert">
+    The are your posts.  Your posts are a collection of the people, places, and experiences you love.
+  </div>
+
+
+  <p class="small">The last time you thought about what you loved was {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }}.</p>
 
 </div>
 

@@ -40,7 +40,7 @@ class SpaceController extends Controller
       $space->space_name = $request->input('space_name');
       $space->user_id = \Auth::id();
       $space->save();
-      return redirect("/private");
+      return redirect("/spaces");
     }
 
     /**
@@ -83,8 +83,10 @@ class SpaceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+      $space = \App\Space::find($id);
+      $space->delete();
+      return redirect("/spaces");
     }
 }
