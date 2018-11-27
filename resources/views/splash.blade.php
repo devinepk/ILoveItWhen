@@ -13,6 +13,7 @@
 
 <div class="container">
 
+
 <form class="" method="POST" action="/private">
   @csrf
     <div class="card-body mx-auto" style="width: 300px;">
