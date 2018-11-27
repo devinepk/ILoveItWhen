@@ -17,9 +17,9 @@ class SpacesUsers extends Migration
         $table->increments('id');
         $table->unsignedInteger('space_id');
         $table->foreign('space_id')->references('id')->on('spaces');
-        $table->unsigned('user_posts_id');
+        $table->unsignedInteger('user_posts_id');
         $table->foreign('user_posts_id')->references('id')->on('user_posts');
-        $table->unsigned('users_id');
+        $table->unsignedInteger('users_id');
         $table->foreign('users_id')->references('id')->on('users');
         $table->timestamps();
       });
