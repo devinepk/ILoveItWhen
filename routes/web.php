@@ -28,7 +28,8 @@ Route::get('/profile', function () {
 });
 
 Route::get('/addUser', function () {
-    return view('addUser');
+    $user = \Auth::user();
+    return view('addUser', compact('user'));
 });
 
 Route::get('/public', function () {

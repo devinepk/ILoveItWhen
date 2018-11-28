@@ -19,8 +19,9 @@
 <div class="card">
   <div class="card-body">
     <div class="form-group text-center">
-      <form class="" method="POST" action="/spaces">
+      <form class="" method="POST" action="/spaces/{{ $user->id }}">
           @csrf
+          @method('PUT')
         <label for="friend_name">Enter their email address</label>
         <input class="form-control mt-2 mb-3 around" name="friend_name" id="friend_name" placeholder="What's their email address?">
         <button type="submit" class="btn btn-outline-primary">Save</button>
