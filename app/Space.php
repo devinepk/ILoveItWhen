@@ -20,4 +20,11 @@ class Space extends Model
       return $dt->diffForHumans();
     }
 
+  public function users() {
+    return $this->belongsToMany('App\User');
+  }
+
+  public function posts() {
+    return $this->belongsToMany('App\user_post');
+  }
 }

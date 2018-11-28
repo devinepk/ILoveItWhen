@@ -32,7 +32,12 @@ class User extends Authenticatable
         return  $this->hasMany('App\user_post');
     }
 
-    public function spaces() {
+    public function spaceOwner() {
         return $this->hasMany('App\Space');
     }
+
+    public function spaces() {
+      return $this->belongsToMany('App\Space');
+    }
+
 }

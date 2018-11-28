@@ -19,4 +19,8 @@ class user_post extends Model
       $dt = new Carbon($this->created_at);
         return $dt->diffForHumans();
       }
+
+    public function spaces() {
+      return $this->belongsToMany('App\Space');
+      }
 }
