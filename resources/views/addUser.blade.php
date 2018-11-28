@@ -16,6 +16,7 @@
   </div>
 
 
+
 <div class="card">
   <div class="card-body">
     <div class="form-group text-center">
@@ -23,6 +24,13 @@
           @csrf
           @method('PUT')
         <label for="friend_name">Enter their email address</label>
+        @if(session()->has('notif'))
+
+          <div class="alert alert-warning text-center" role="alert">
+            {{ session()->get('notif') }}
+          </div>
+
+        @endif
         <input class="form-control mt-2 mb-3 around" name="friend_name" id="friend_name" placeholder="What's their email address?">
         <button type="submit" class="btn btn-outline-primary">Save</button>
 

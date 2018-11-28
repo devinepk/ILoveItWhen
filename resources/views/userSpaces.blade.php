@@ -22,7 +22,7 @@
 
 @foreach($user->spaceOwner()->latest()->get() as $space)
 
-  <div class="card mt-3" style="">
+  <div class="card mt-3 mb-5" style="">
     <div class="card-body">
       <h5 class="mt-2">{{ $space->space_name }}</h5>
     </div>

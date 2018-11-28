@@ -77,32 +77,22 @@ class SpaceController extends Controller
         // Find the existing space
         $s = \App\Space::find($id);
 
-
-
-        $email = \DB::table('users')->where('email', '=', $request->input('friend_name'))->get();
-
-dd($email);
-
         //check to see if the email exists in the user database
-        if (1 == 1) {
-
-            $s->Space()->attach();
-
-        };
-
-
-        $emails = DB::table('users')->pluck('email', 'id');
-          foreach ($emails as $email) {
-// dd($email);
-            if ($request->input('friend_name') == $email) {
-              $s->Space()->attach($email->id);
+        $email = \DB::table('users')->where('email', '=', $request->input('friend_name'))->get();
+            if ($email->all() != []) {
+                return ('this email is in the system');
             } else {
+                return ('NOPE! Gotta invite them.');
+            }
 
-              //if not, flash message that the user does not exist and needs to create an account.
-
-            };
-      };
     }
+
+
+
+
+
+
+
 
     /**
      * Remove the specified resource from storage.
