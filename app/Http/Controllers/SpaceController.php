@@ -82,7 +82,9 @@ class SpaceController extends Controller
             if ($email->all() != []) {
                 return ('this email is in the system');
             } else {
-                return ('NOPE! Gotta invite them.');
+              $request->session()->flash('notif', 'No user with that email address found.  Please have your friend sign up first.');
+              $space = \App\Space::find($id);
+              return view('addUser', compact('space'));
             }
 
     }
