@@ -20,22 +20,23 @@
   <a href="/addnew" class="btn btn-outline-primary btn-md btn-block">Add A New Space</a>
 </div>
 
-@foreach($user->spaces()->latest()->get() as $space)
+@foreach($user->spaceOwner()->latest()->get() as $space)
 
-  <div class="card mb-3 mt-3" style="">
+  <div class="card mt-3" style="">
     <div class="card-body">
-      <div class="container" id="cardText">
-        <h5 class="mt-2">{{ $space->space_name }}</h5>
+      <h5 class="mt-2">{{ $space->space_name }}</h5>
+    </div>
+      <div class="card-header pb-0">
+        <small class="text-muted mr-5">{{ $space->prettyUpdate() }}</small>
+        <ul class="list-inline float-right mb-0">
+          <li class="list-inline-item"><small><a href="/addUser" class="btn-btn-link"><i class="fas fa-user-plus"></i></a></small></li>
+          <li class="list-inline-item"><form action="spaces/{{ $space->id }}" method="POST" class="mb-0">
+              @csrf
+              @method('DELETE')
+              <small><button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button></small>
+            </form></li>
+        </ul>
       </div>
-    </div>
-    <div class="card-header">
-      <small class="text-muted mr-5">{{ $space->prettyUpdate() }}</small>
-      <form action="spaces/{{ $space->id }}" method="POST">
-          @csrf
-          @method('DELETE')
-        <small><button type="submit" class="btn btn-link float-right"><i class="far fa-trash-alt float-right"></i></button></small>
-      </form>
-    </div>
   </div>
 
 @endforeach

@@ -27,6 +27,10 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
+Route::get('/addUser', function () {
+    return view('addUser');
+});
+
 Route::get('/public', function () {
     return view('publicFeed');
 });

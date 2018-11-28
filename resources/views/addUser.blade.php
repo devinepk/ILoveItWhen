@@ -8,11 +8,11 @@
 
 <div class="container">
 
-  <h3 class="text-center mb-3">Add A New Space</h3>
+  <h3 class="text-center mb-3">Add a Friend to Your Space</h3>
 
 
   <div class="alert alert-primary text-center" role="alert">
-    <span style="text-decoration: underline">Spaces:</span> A place for you and your friends to share things you love together.
+    Here you can add a friend, family member, or anyone else to share a space with you.
   </div>
 
 
@@ -21,8 +21,8 @@
     <div class="form-group text-center">
       <form class="" method="POST" action="/spaces">
           @csrf
-        <label for="space_name">Name Your Space</label>
-        <input class="form-control mt-2 mb-3 around" name="space_name" id="space_name" placeholder="What do you want to call it?">
+        <label for="friend_name">Enter their email address</label>
+        <input class="form-control mt-2 mb-3 around" name="friend_name" id="friend_name" placeholder="What's their email address?">
         <button type="submit" class="btn btn-outline-primary">Save</button>
 
       </form>
