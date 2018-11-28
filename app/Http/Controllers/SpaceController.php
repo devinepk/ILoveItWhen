@@ -74,13 +74,23 @@ class SpaceController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-dd($id);
         // Find the existing space
         $s = \App\Space::find($id);
 
 
+
+        $email = \DB::table('users')->where('email', '=', $request->input('friend_name'))->get();
+
+dd($email);
+
         //check to see if the email exists in the user database
+        if (1 == 1) {
+
+            $s->Space()->attach();
+
+        };
+
+
         $emails = DB::table('users')->pluck('email', 'id');
           foreach ($emails as $email) {
 // dd($email);
@@ -90,8 +100,8 @@ dd($id);
 
               //if not, flash message that the user does not exist and needs to create an account.
 
-            }
-      }
+            };
+      };
     }
 
     /**

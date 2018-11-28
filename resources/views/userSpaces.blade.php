@@ -29,7 +29,7 @@
       <div class="card-header pb-0">
         <small class="text-muted mr-5">{{ $space->prettyUpdate() }}</small>
         <ul class="list-inline float-right mb-0">
-          <li class="list-inline-item"><small><a href="/addUser" class="btn-btn-link"><i class="fas fa-user-plus"></i></a></small></li>
+          <li class="list-inline-item"><small><a href="/addUser/{{ $space->id }}" class="btn-btn-link"><i class="fas fa-user-plus"></i></a></small></li>
           <li class="list-inline-item"><form action="spaces/{{ $space->id }}" method="POST" class="mb-0">
               @csrf
               @method('DELETE')

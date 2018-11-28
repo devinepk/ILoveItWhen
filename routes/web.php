@@ -27,9 +27,9 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-Route::get('/addUser', function () {
-    $user = \Auth::user();
-    return view('addUser', compact('user'));
+Route::get('/addUser/{id}', function ($id) {
+    $space = \App\Space::find($id);
+    return view('addUser', compact('space'));
 });
 
 Route::get('/public', function () {

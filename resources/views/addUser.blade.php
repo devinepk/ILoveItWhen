@@ -19,7 +19,7 @@
 <div class="card">
   <div class="card-body">
     <div class="form-group text-center">
-      <form class="" method="POST" action="/spaces/{{ $user->id }}">
+      <form class="" method="POST" action="/spaces/{{ $space->id }}">
           @csrf
           @method('PUT')
         <label for="friend_name">Enter their email address</label>
