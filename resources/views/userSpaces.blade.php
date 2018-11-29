@@ -25,6 +25,7 @@
   <div class="card mt-3 mb-5" style="">
     <div class="card-body">
       <h5 class="mt-2">{{ $space->space_name }}</h5>
+      <p>Members: </p>
     </div>
       <div class="card-header pb-0">
         <small class="text-muted mr-5">{{ $space->prettyUpdate() }}</small>
