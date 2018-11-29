@@ -72,20 +72,20 @@ class SpaceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        // Find the existing space
-        $s = \App\Space::find($id);
-
-        //check to see if the email exists in the user database
-        $email = \DB::table('users')->where('email', '=', $request->input('friend_name'))->get();
-            if ($email->all() != []) {
-                return ('this email is in the system');
-            } else {
-              $request->session()->flash('notif', 'No user with that email address found.  Please have your friend sign up first.');
-              $space = \App\Space::find($id);
-              return view('addUser', compact('space'));
-            }
+    // public function update(Request $request, $id)
+    // {
+    //     // Find the existing space
+    //     $s = \App\Space::find($id);
+    //
+    //     //check to see if the email exists in the user database
+    //     $email = \DB::table('users')->where('email', '=', $request->input('friend_name'))->select('id')->first();
+    //         if ($email != null) {
+    //             $s->users()->attach($email);
+    //         } else {
+    //             $request->session()->flash('notif', 'No user with that email address found.  Please have your friend sign up first.');
+    //             $space = \App\Space::find($id);
+    //             return view('addUser', compact('space'));
+    //         }
 
     }
 

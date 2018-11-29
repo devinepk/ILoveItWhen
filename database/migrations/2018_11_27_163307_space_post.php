@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class SpacesPosts extends Migration
+class SpacePost extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class SpacesPosts extends Migration
      */
     public function up()
     {
-      Schema::create('spaces_posts', function (Blueprint $table) {
+      Schema::create('space_post', function (Blueprint $table) {
         $table->increments('id');
         $table->unsignedInteger('space_id');
         $table->foreign('space_id')->references('id')->on('spaces');
@@ -30,6 +30,6 @@ class SpacesPosts extends Migration
      */
     public function down()
     {
-      Schema::dropIfExists('spaces_post');
+      Schema::dropIfExists('space_post');
     }
   }
