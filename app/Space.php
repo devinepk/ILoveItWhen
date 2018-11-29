@@ -27,4 +27,5 @@ class Space extends Model
   public function posts() {
     return $this->hasMany('App\user_post');
   }
+
 }
