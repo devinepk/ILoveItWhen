@@ -6,8 +6,6 @@
 @endsection
 
 @section('content')
-</div>
-
 <div class="container">
 
   <h3 class="text-center mb-3">Spaces</h3>
@@ -29,18 +27,18 @@
 
     <p>Member(s)</p>
       <ul>
-        <form action="/remove/{{ $user->id }}" method="POST">
-          @csrf
-@foreach($space->users as $user)
-            <input type="hidden" id="spaceID" name="spaceID" value="{! $space->id !}">
-              <li>{{ $user->name }}
-              <small><button type="submit" class="btn btn-link"><i class="fas fa-user-minus"></i></button></small>
-              </li>
+@foreach($space->users as $u)
+        <li>{{ $u->name }}
+            <form action="/remove/{{ $u->id }}" method="POST">
+              @csrf
+                <input type="hidden" id="spaceID" name="spaceID" value="{{ $space->id }}">
+                <small><button type="submit" class="btn btn-link"><i class="fas fa-user-minus"></i></button></small>
+            </form>
+        </li>
 @endforeach
-      </form>
       </ul>
+    </div>
 
-  </div>
     <div class="card-header pb-0">
       <small class="text-muted mr-5">{{ $space->prettyUpdate() }}</small>
       <ul class="list-inline float-right mb-0">

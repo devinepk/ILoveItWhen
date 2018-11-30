@@ -105,6 +105,10 @@ class SpaceController extends Controller
 
     public function removeUser(Request $request, $id)
     {
+      $s = \App\Space::find($request->input('spaceID'));
+dd($id);
+
+
       return ('the user was removed from the space');
 
     }
