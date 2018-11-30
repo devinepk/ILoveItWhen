@@ -18,7 +18,7 @@
 
 <div class="card">
   <div class="card-body">
-    <div class="form-group text-center">
+    <div class="form-group">
       <form class="" method="POST" action="/spaces">
           @csrf
         <label for="space_name">Name Your Space</label>
