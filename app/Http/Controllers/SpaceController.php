@@ -81,7 +81,7 @@ class SpaceController extends Controller
         $email = \DB::table('users')->where('email', '=', $request->input('friend_name'))->select('id')->first();
             if ($email != null) {
                 $s->users()->attach($email);
-                return redirect("/spaces");
+                return redirect('/spaces');
             } else {
                 $request->session()->flash('notif', 'No user with that email address found.  Please have your friend sign up first.');
                 $space = \App\Space::find($id);
@@ -100,13 +100,14 @@ class SpaceController extends Controller
     {
       $space = \App\Space::find($id);
       $space->delete();
-      return redirect("/spaces");
+      return redirect('/spaces');
     }
 
     public function removeUser(Request $request, $id)
     {
       $s = \App\Space::find($request->input('spaceID'));
-dd($id);
+      $s->users()->detach($id);
+      return redirect("/spaces");
 
 
       return ('the user was removed from the space');
