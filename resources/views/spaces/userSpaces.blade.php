@@ -29,9 +29,15 @@
 
     <p>Member(s)</p>
       <ul>
+        <form action="/remove/{{ $user->id }}" method="POST">
+          @csrf
 @foreach($space->users as $user)
-        <li>{{ $user->name }}</li>
+            <input type="hidden" id="spaceID" name="spaceID" value="{! $space->id !}">
+              <li>{{ $user->name }}
+              <small><button type="submit" class="btn btn-link"><i class="fas fa-user-minus"></i></button></small>
+              </li>
 @endforeach
+      </form>
       </ul>
 
   </div>

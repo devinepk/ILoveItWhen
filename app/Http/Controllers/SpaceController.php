@@ -14,7 +14,7 @@ class SpaceController extends Controller
     public function index()
     {
         $user = \Auth::user();
-        return view('userSpaces', compact('user'));
+        return view('spaces/userSpaces', compact('user'));
 
     }
 
@@ -85,17 +85,10 @@ class SpaceController extends Controller
             } else {
                 $request->session()->flash('notif', 'No user with that email address found.  Please have your friend sign up first.');
                 $space = \App\Space::find($id);
-                return view('addUser', compact('space'));
+                return view('users/addUser', compact('space'));
             }
 
-    }
-
-
-
-
-
-
-
+      }
 
     /**
      * Remove the specified resource from storage.
@@ -108,5 +101,11 @@ class SpaceController extends Controller
       $space = \App\Space::find($id);
       $space->delete();
       return redirect("/spaces");
+    }
+
+    public function removeUser(Request $request, $id)
+    {
+      return ('the user was removed from the space');
+
     }
 }

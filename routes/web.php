@@ -12,7 +12,7 @@
 */
 
 Route::get('/addnew', function () {
-    return view('addSpaces');
+    return view('spaces/addSpaces');
 });
 
 Route::get('/welcome', function () {
@@ -29,7 +29,7 @@ Route::get('/profile', function () {
 
 Route::get('/addUser/{id}', function ($id) {
     $space = \App\Space::find($id);
-    return view('addUser', compact('space'));
+    return view('users/addUser', compact('space'));
 });
 
 Route::get('/public', function () {
@@ -44,9 +44,11 @@ Route::resource('/private', 'PostController')->middleware('auth');
 
 Route::resource('/spaces', 'SpaceController')->middleware('auth');
 
+Route::post('/remove/{id}', 'SpaceController@removeUser')->middleware('auth');
+
 Auth::routes();
 
 Route::get('/private', function () {
     $user = \Auth::user();
-    return view('userFeed', compact('user'));
+    return view('users/userFeed', compact('user'));
 });
