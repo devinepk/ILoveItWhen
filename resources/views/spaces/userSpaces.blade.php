@@ -25,6 +25,9 @@
   <div class="card-body">
     <h5 class="mt-2">{{ $space->space_name }}</h5>
 
+
+
+
     <p>Member(s)</p>
       <ul>
 @foreach($space->users as $u)
@@ -35,6 +38,7 @@
                 <small><button type="submit" class="btn btn-link"><i class="fas fa-user-minus"></i></button></small>
             </form>
         </li>
+
 @endforeach
       </ul>
     </div>
@@ -49,6 +53,7 @@
             <small><button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button></small>
           </form></li>
       </ul>
+
     </div>
 </div>
 

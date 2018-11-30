@@ -108,9 +108,5 @@ class SpaceController extends Controller
       $s = \App\Space::find($request->input('spaceID'));
       $s->users()->detach($id);
       return redirect("/spaces");
-
-
-      return ('the user was removed from the space');
-
     }
 }
