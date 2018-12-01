@@ -29,17 +29,17 @@
         <h5 class="mt-2">I love it when {{ $post->post_text }}</h5>
       </div>
     </div>
-    <div class="card-header">
+    <div class="card-header pb-0">
       <small class="text-muted mr-5">Created on {{ $post->prettyUpdate() }}</small>
-      <!-- <i class="far fa-heart mr-1 float-right" id="favorite"></i>
-      <i class="fas fa-lock-open mr-2 float-right" id="privatePublic"></i>
-      <i class="fas fa-share-alt mr-2 float-right" id="share"></i> -->
-      <form action="private/{{ $post->id }}" method="POST">
-          @csrf
-          @method('DELETE')
-        <small><button type="submit" class="btn btn-link float-right"><i class="far fa-trash-alt float-right"></i></button></small>
-      </form>
-    </div>
+        <ul class="list-inline float-right mb-0">
+          <li class="list-inline-item mr-0"><small><a href="#" class="btn-btn-link p-1"><i class="far fa-plus-square fa-lg"></i></a></small></li>
+          <li class="list-inline-item"><form action="private/{{ $post->id }}" method="POST">
+              @csrf
+              @method('DELETE')
+            <small><button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button></small>
+          </form></li>
+        </ul>
+      </div>
   </div>
 
 @endforeach
