@@ -28,7 +28,7 @@
 </div>
 
 
-<div class="mt-3 container text-center">
+<!-- <div class="mt-3 container text-center">
 <p><a href="/public">See some examples</a></p>
-</div>
+</div> -->
 @endsection

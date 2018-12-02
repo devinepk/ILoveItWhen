@@ -56,9 +56,9 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/">Add New Post</a>
-                                    <a class="dropdown-item" href="/addnew">Add New Space</a>
+                                    <!-- <a class="dropdown-item" href="/addnew">Add New Space</a> -->
                                     <a class="dropdown-item" href="/private">My Posts</a>
-                                    <a class="dropdown-item" href="/spaces">My Spaces</a>
+                                    <!-- <a class="dropdown-item" href="/spaces">My Spaces</a> -->
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
