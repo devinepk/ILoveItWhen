@@ -36,6 +36,11 @@ Route::get('/public', function () {
     return view('publicFeed');
 });
 
+Route::get('/addToPost/{id}', function ($id) {
+    $poster = \App\User::find($id);
+    return view('spaces/postSpace', compact('poster'));
+});
+
 Route::get('/', function () {
     return view('splash');
 });

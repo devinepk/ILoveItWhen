@@ -29,7 +29,7 @@
 
 
     <p>Member(s)</p>
-      <ul>
+      <ul class="list-inline">
 @foreach($space->users as $u)
         <li>{{ $u->name }}
             <form action="/remove/{{ $u->id }}" method="POST">
