@@ -89,4 +89,19 @@ class PostController extends Controller
       $post->delete();
       return redirect("/private");
     }
+
+    public function addToSpace(Request $request)
+    {
+
+      //isolate the id's
+      $spaceid = $request->space_id;
+
+      $postid = $request->post_id;
+
+      $space = \App\Space::find($spaceid);
+
+      //define the relationship
+      $space->posts()->attach($postid);
+      return redirect('/private');
+    }
 }

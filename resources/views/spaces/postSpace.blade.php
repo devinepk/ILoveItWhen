@@ -23,16 +23,18 @@
       <div class="card-body">
         <div class="" id="cardText">
             <div class="list-group">
-              <form action="" method="POST">
+              <form action="/sample" method="POST">
                 @csrf
-              <button type="submit" class="list-group-item list-group-item-action">{{ $avail->space_name }}</button>
+              <button type="submit" value="{{ $avail->id }}" class="list-group-item list-group-item-action">Space Name: {{ $avail->space_name }}</button>
+              <input type="hidden" name="space_id" value="{{ $avail->id }}">
+              <input type="hidden" name="post_id" value="{{ $id }}">
             </div>
         </div>
       </div>
 
 
       <div class="card-header pb-0">
-        <p class="text-muted mr-5">Personal Spaces</p>
+        <p class="text-muted mr-5">Number of Posts: # </p>
       </div>
     </div>
 

@@ -38,7 +38,7 @@ Route::get('/public', function () {
 
 Route::get('/addToPost/{id}', function ($id) {
     $poster = \App\User::find($id);
-    return view('spaces/postSpace', compact('poster'));
+    return view('spaces/postSpace', compact('poster', 'id'));
 });
 
 Route::get('/', function () {
@@ -50,6 +50,8 @@ Route::resource('/private', 'PostController')->middleware('auth');
 Route::resource('/spaces', 'SpaceController')->middleware('auth');
 
 Route::post('/remove/{id}', 'SpaceController@removeUser')->middleware('auth');
+
+Route::post('/sample', 'PostController@addToSpace')->middleware('auth');
 
 Auth::routes();
 
