@@ -85,9 +85,11 @@ class PostController extends Controller
      */
     public function destroy(Request $request, $id)
     {
-      // $space = \App\Space::
+      //detach from space
+
       $post = \App\user_post::find($id);
-      $post->spaces()->detach();
+
+      //detach from user 
       $post->delete();
       return redirect("/private");
     }
