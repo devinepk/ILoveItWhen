@@ -26,27 +26,26 @@
   </div>
   <div class="card-body">
 
-    <p>Posts</p>
-      <ul>
-@foreach($space->posts()->get() as $p)
-          <li>{{ $p->post_text }}</li>
-@endforeach
-      </ul>
+          <p>Posts</p>
+            <ul>
+      @foreach($space->posts()->get() as $p)
+                <li>{{ $p->post_text }}</li>
+      @endforeach
+            </ul>
 
 
-    <p>Member(s)</p>
-      <ul class="list-inline">
-@foreach($space->users as $u)
-        <li>{{ $u->name }}
-            <form action="/remove/{{ $u->id }}" method="POST">
-              @csrf
-                <input type="hidden" id="spaceID" name="spaceID" value="{{ $space->id }}">
-                <small><button type="submit" class="btn btn-link"><i class="fas fa-user-minus"></i></button></small>
-            </form>
-        </li>
-
-@endforeach
-      </ul>
+          <p>Member(s)</p>
+            <ul class="list-inline">
+      @foreach($space->users as $u)
+              <li>{{ $u->name }}
+                  <form action="/remove/{{ $u->id }}" method="POST">
+                    @csrf
+                      <input type="hidden" id="spaceID" name="spaceID" value="{{ $space->id }}">
+                      <small><button type="submit" class="btn btn-link"><i class="fas fa-user-minus"></i></button></small>
+                  </form>
+              </li>
+      @endforeach
+            </ul>
     </div>
 
     <div class="card-header pb-0">
@@ -56,6 +55,8 @@
         <li class="list-inline-item"><form action="spaces/{{ $space->id }}" method="POST" class="mb-0">
             @csrf
             @method('DELETE')
+            <input type="hidden" name="user_id" value="{{ $user->id }}">
+            <input type="hidden" name="space_id" value="{{ $space->id }}">
             <small><button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button></small>
           </form></li>
       </ul>

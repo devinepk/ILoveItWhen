@@ -23,4 +23,8 @@ class user_post extends Model
     public function spaces() {
       return $this->belongsToMany('App\Space', 'space_post', 'space_id', 'post_id');
       }
+
+    public function userposts() {
+      return $this->hasOne('App\User');
+      }
 }

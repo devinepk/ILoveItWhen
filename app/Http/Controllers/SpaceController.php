@@ -100,6 +100,7 @@ class SpaceController extends Controller
     public function destroy(Request $request, $id)
     {
       $space = \App\Space::find($id);
+      $space->users()->detach();
       $space->delete();
       return redirect('/spaces');
     }
