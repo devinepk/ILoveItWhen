@@ -40,6 +40,7 @@ class SpaceController extends Controller
       $space->space_name = $request->input('space_name');
       $space->user_id = \Auth::id();
       $space->save();
+      $space->users()->attach(\Auth::user());
       return redirect("/spaces");
     }
 

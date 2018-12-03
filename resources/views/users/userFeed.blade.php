@@ -32,7 +32,7 @@
     <div class="card-header pb-0">
       <small class="text-muted mr-5">Created on {{ $post->prettyUpdate() }}</small>
         <ul class="list-inline float-right mb-0">
-          <!-- <li class="list-inline-item mr-0"><small><a href="/addToPost/{{ $post->id }}" class="btn-btn-link p-1">Add This Post to a Space</a></small></li> -->
+          <li class="list-inline-item mr-0"><small><a href="/addToPost/{{ $post->id }}" class="btn-btn-link p-1">Add This Post to a Space</a></small></li>
           <li class="list-inline-item"><form action="private/{{ $post->id }}" method="POST">
               @csrf
               @method('DELETE')
