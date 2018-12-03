@@ -25,7 +25,7 @@
             <div class="list-group">
               <form action="/sample" method="POST">
                 @csrf
-              <button type="submit" value="{{ $avail->id }}" class="list-group-item list-group-item-action">Space Name: {{ $avail->space_name }}</button>
+              <button type="submit" value="{{ $avail->id }}" class="list-group-item list-group-item-action"><span style="weight:bold">Space Name:</span> {{ $avail->space_name }}</button>
               <input type="hidden" name="space_id" value="{{ $avail->id }}">
               <input type="hidden" name="post_id" value="{{ $id }}">
             </div>

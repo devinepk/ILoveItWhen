@@ -20,12 +20,18 @@
 
 @foreach($user->spaceOwner()->latest()->get() as $space)
 
-
 <div class="card mt-3 mb-5" style="">
+  <div class="card-header">
+  <h3>{{ $space->space_name }}<h3>
+  </div>
   <div class="card-body">
-    <h5 class="mt-2">{{ $space->space_name }}</h5>
 
-
+    <p>Posts</p>
+      <ul>
+@foreach($space->posts()->get() as $p)
+          <li>{{ $p->post_text }}</li>
+@endforeach
+      </ul>
 
 
     <p>Member(s)</p>
