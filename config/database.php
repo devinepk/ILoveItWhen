@@ -8,7 +8,7 @@ $dbport = $url['port'];
 $dbname = substr($url['path'],1);
 
 return [
-
+  
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
