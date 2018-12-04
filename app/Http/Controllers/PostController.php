@@ -14,7 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return "This is the index of the post contoller"
+        return "This is the index of the post contoller";
     }
 
     /**

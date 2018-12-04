@@ -10,9 +10,19 @@
 
     <h3 class="text-center mb-3">Things I Love</h3>
 
+@if($user->posts()->count() === 0)
+
+<div class="alert alert-primary text-center mb-3" role="alert">
+You haven't recorded anything you love yet. Click the plus sign on the bottom of the screen to get started.
+</div>
+
+@endif
+
+@if($user->posts()->count() > 0 )
   <div class="alert alert-primary text-center mb-3" role="alert">
     These are your posts.  Your posts are a collection of the people, places, and experiences you love.
   </div>
+
 
 
   <p class="small">The last time you thought about what you loved was {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }}.</p>
@@ -20,6 +30,7 @@
 </div>
 
 <div class="container">
+
 
 @foreach($user->posts()->latest()->get() as $post)
 
@@ -46,6 +57,8 @@
 @endforeach
 
 </div>
+
+@endif
 
 
 @endsection

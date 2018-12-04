@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+
 <div class="container text-center">
   <h1 class="mt-3 mb-3">I</h1>
     <img src="images/I.jpg" alt="Heart" class="w-25">
@@ -14,6 +15,7 @@
 <div class="container">
 
 
+@auth
 <form class="" method="POST" action="/private">
   @csrf
     <div class="card-body mx-auto" style="width: 300px;">
@@ -26,6 +28,14 @@
   </form>
 
 </div>
+@endauth
+
+
+@guest
+<div class="container text-center">
+  <a href="{{ route('register') }}" class="btn btn-outline-primary mt-4" role="button" aria-pressed="true">Sign Up</a>
+<div class="container">
+@endguest
 
 
 <!-- <div class="mt-3 container text-center">
