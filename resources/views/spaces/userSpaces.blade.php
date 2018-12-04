@@ -10,6 +10,19 @@
 
   <h3 class="text-center mb-3">Spaces</h3>
 
+
+@if(Auth::user()->spaces()->count() === 0)
+
+<div class="alert alert-primary text-center" role="alert">
+  You haven't created any spaces yet. Add a new space below.
+</div>
+<div>
+  <a href="/addnew" class="btn btn-outline-primary btn-md btn-block">Add A New Space</a>
+</div>
+
+@endif
+
+@if(Auth::user()->spaces()->count() > 0)
 <div class="alert alert-primary text-center mb-3" role="alert">
   These are your spaces. Spaces are where you and your friends can share things you love, together.
 </div>
@@ -21,8 +34,8 @@
 @foreach($user->spaceOwner()->latest()->get() as $space)
 
 <div class="card mt-3 mb-5" style="">
-  <div class="card-header">
-  <h3>{{ $space->space_name }}<h3>
+  <div class="card-header pb-0">
+  <p>{{ $space->space_name }}</p>
   </div>
   <div class="card-body">
 
@@ -66,7 +79,7 @@
 
 @endforeach
 
-
+@endif
 </div>
 
 

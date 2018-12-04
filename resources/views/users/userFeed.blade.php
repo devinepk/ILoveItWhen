@@ -13,7 +13,10 @@
 @if($user->posts()->count() === 0)
 
 <div class="alert alert-primary text-center mb-3" role="alert">
-You haven't recorded anything you love yet. Click the plus sign on the bottom of the screen to get started.
+You haven't recorded anything you love yet. Start by clicking below.
+</div>
+<div>
+  <a href="/" class="btn btn-outline-primary btn-md btn-block">Add a New Post</a>
 </div>
 
 @endif
