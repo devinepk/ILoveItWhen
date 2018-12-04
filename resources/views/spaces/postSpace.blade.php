@@ -20,7 +20,7 @@
 
 
     <div class="card mb-5" style="">
-      <div class="card-body">
+      <div class="card-body container around" id="cardText">
         <div class="" id="cardText">
             <div class="list-group">
               <form action="/sample" method="POST">
@@ -33,9 +33,9 @@
       </div>
 
 
-      <div class="card-header pb-0">
+      <!-- <div class="card-header pb-0">
         <p class="text-muted mr-5">Number of Posts: # </p>
-      </div>
+      </div> -->
     </div>
 
 @endforeach

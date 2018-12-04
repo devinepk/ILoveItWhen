@@ -29,7 +29,7 @@
           <p>Posts</p>
             <ul>
       @foreach($space->posts()->get() as $p)
-                <li>{{ $p->post_text }}</li>
+                <li>I love it when {{ $p->post_text }}</li>
       @endforeach
             </ul>
 
@@ -57,7 +57,7 @@
             @method('DELETE')
             <input type="hidden" name="user_id" value="{{ $user->id }}">
             <input type="hidden" name="space_id" value="{{ $space->id }}">
-            <small><button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button></small>
+            <!-- <small><button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button></small> -->
           </form></li>
       </ul>
 
