@@ -26,7 +26,9 @@ You haven't recorded anything you love yet. Start by clicking below.
     These are your posts.  Your posts are a collection of the people, places, and experiences you love.
   </div>
 
-
+  <div>
+    <a href="/" class="btn btn-outline-primary btn-md btn-block mb-3">Add A New Post</a>
+  </div>
 
   <p class="small">The last time you thought about what you loved was {{ $user->posts()->orderByDesc('created_at')->first()->lastUpdate() }}.</p>
 
@@ -66,4 +68,4 @@ You haven't recorded anything you love yet. Start by clicking below.
 
 @endsection
 
-@extends('footer')
+@yield('footer')
