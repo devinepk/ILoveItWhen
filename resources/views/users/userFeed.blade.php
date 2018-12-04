@@ -36,6 +36,7 @@
           <li class="list-inline-item"><form action="private/{{ $post->id }}" method="POST">
               @csrf
               @method('DELETE')
+              <input type="hidden" name="space_id" value="{{ $post }}">
             <small><button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button></small>
           </form></li>
         </ul>

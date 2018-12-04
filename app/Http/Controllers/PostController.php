@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
@@ -13,7 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return "this is the index of PostController";
+        return "This is the index of the post contoller"
     }
 
     /**
@@ -85,13 +86,10 @@ class PostController extends Controller
      */
     public function destroy(Request $request, $id)
     {
-      //detach from space
+      $user = DB::table('space_post')->where('post_id', '=', $id)->delete();
+      $user = DB::table('user_posts')->where('id', '=', $id)->delete();
+      return redirect('/private');
 
-      $post = \App\user_post::find($id);
-
-      //detach from user 
-      $post->delete();
-      return redirect("/private");
     }
 
     public function addToSpace(Request $request)
