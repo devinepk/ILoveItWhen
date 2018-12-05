@@ -16,18 +16,18 @@ You are free to copy, modify, and distribute `I Love It When` with attribution u
 
 ## How to Use It
 
-### Local Installation:
+### Required Technology:
 
-Before pulling down `I Love It When` you need:
+Before pulling down `I Love It When`, you need:
 * `Git`
 * `Laravel`
 * `npm`
 * `composer`
 * An editor. I used `Atom`
 * A terminal. I used `Terminal`, the default that came on my MacBook
-* A database manager. I used `Psequel`.
+* A database manager. I used `Psequel` and `Postgres`.
 
-#### Run the following in your terminal:
+#### Set up the project:
 
 ```
 $ composer install
@@ -35,4 +35,11 @@ $ laravel new [project name]
 $ npm install
 ```
 
-##
+#### To Run It On A Local Server:
+In your terminal: run `php artisan serve`. Access it via [http://localhost:8000](http://localhost:8000).
+
+# Additional Resources
+
+* [Laravel Documentation](https://laravel.com/docs/5.7)
+* [Font Awesome](https://fontawesome.com/)
+* [php documentation](http://php.net/docs.php)
