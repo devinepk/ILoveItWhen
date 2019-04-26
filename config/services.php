@@ -41,8 +41,8 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => env('FACEBOOK_CLIENT_ID'),         // Your GitHub Client ID
-        'client_secret' => env('FACEBOOK_CLIENT_SECRET'), // Your GitHub Client Secret
+        'client_id' => env('335956330458386'),         // Your GitHub Client ID
+        'client_secret' => env('ef73f13aaa1f583588ee495836e4d90f'), // Your GitHub Client Secret
         'redirect' => "/",
     ],
 
