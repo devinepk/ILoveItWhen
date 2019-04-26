@@ -87,6 +87,10 @@ class SpaceController extends Controller
                 $request->session()->flash('notif', 'No user with that email address found.  Please have your friend sign up first.');
                 $space = \App\Space::find($id);
                 return view('users/addUser', compact('space'));
+                //TODO "They've been sent an invitation"
+                // Send email notification to user email address that was entered that contains signup link
+                // Upon sign up, add new user to inviter's space
+                // Redirect user to shared spaces view
             }
 
       }
